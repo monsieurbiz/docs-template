@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- ========== Change here ========== -->
+
+  <!-- TITLE OF YOUR DOCUMENTATION -->
+  <title>Docs Template - Monsieur Biz</title>
+
+  <!-- DESCRIPTION OF YOUR DOCUMENTATION -->
+  <meta name="description" content="">
+
+  <!-- Keep it -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+  <!-- ANDROID APP CONFIGURATION -->
+  <meta name="theme-color" content="#5d44dc">
+  <meta name="msapplication-config" content="https://monsieurbiz.com/assets/favicons/browserconfig.xml">
+  <link rel="mask-icon" href="https://monsieurbiz.com/assets/favicons/safari-pinned-tab.svg">
+
+  <!-- OPEN GRAPH INFO -->
+  <meta property="og:title" content="Docs Template - Monsieur Biz">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="https://monsieurbiz.com/">
+  <meta property="og:site_name" content="Docs Template documentation">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://monsieurbiz.com/assets/images/og-image.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="350">
+  <meta property="og:image:height" content="350">
+
+  <!-- SEO -->
+  <meta name="robots" content="index,follow">
+
+  <!-- FAVICONS -->
+  <link rel="apple-touch-icon" sizes="180x180" href="https://monsieurbiz.com/assets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://monsieurbiz.com/assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://monsieurbiz.com/assets/favicons/favicon-16x16.png">
+  <link rel="shortcut icon" href="https://monsieurbiz.com/assets/favicons/favicon.ico">
+  <link rel="manifest" href="https://monsieurbiz.com/assets/favicons/manifest.json">
+
+  <!-- ========== End Changes ========== -->
+
+  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+  <style>
+    .cover-main img {
+      max-width: 400px;
+    }
+    main aside h1 img {
+      max-width: 140px;
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      // basePath: '/magento1/',
+      name: 'Docs Template',
+      repo: 'monsieurbiz/docs-template',
+      alias: {
+      },
+      coverpage: true,
+      themeColor: '#000000',
+      loadSidebar: true,
+      search: {
+        noData: {
+          '/': 'No results!'
+        },
+        paths: 'auto',
+        placeholder: {
+          '/': 'Search'
+        }
+      },
+      auto2top: true
+    };
+    window.addEventListener("load", function() {
+        document.querySelector('.app-name-link').innerHTML = '<img src="_media/logo.svg" />';
+    });
+  </script>
+
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/emoji.min.js"></script>
+  <script src="//unpkg.com/docsify-copy-code"></script>
+
+  <script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-php.min.js"></script>
+
+</body>
+</html>
